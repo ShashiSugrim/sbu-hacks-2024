@@ -1,1 +1,1 @@
-# sbu-hacks-2024
+# SBU-Hacks-2024

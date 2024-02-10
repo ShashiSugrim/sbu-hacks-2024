@@ -24,7 +24,7 @@ const SearchBar = () => {
         </button>
       </header>
       <aside className={SearchBarCSS.filters}>
-        <h3>Filter</h3>
+        {/* <h3>Filter</h3> */}
         {/* Add filter options here */}
       </aside>
       <main className={SearchBarCSS.searchResults}>

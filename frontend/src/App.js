@@ -14,7 +14,7 @@ function App() {
       {/* <button className="button"><b></b></button> */}
       <NavBar />
       <ShoeFinderImage src={finderShoeLogo} />
-   
+      <h1>"Perfect Fit, Style & Happiness For Every Mile"</h1>
     <Button>Find your fit </Button>
       
 

@@ -1,0 +1,34 @@
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(9, 0, 44, 0.853);
+    height: 100vh; /* 100% of the viewport height */
+}
+
+@keyframes glowEffect {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(207, 205, 214, 0.853);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(48, 85, 209, 0.802);
+    }
+}
+
+@keyframes hoverLoop {
+    0%, 100% {
+        transform: translateY(20);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance you want to move */
+    }
+}
+
+h1 {
+    animation: hoverLoop 2s infinite, glowEffect 1s infinite;
+    cursor: pointer; /* Add this if you want to indicate it's clickable */
+}

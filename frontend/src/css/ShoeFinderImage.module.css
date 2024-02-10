@@ -3,7 +3,7 @@
     width: 100%;
     text-align: center;
     margin-right: 10px;
-    padding: 220px 5px;
+    padding: 1px 2px;
     padding-bottom: 350px;
   
 
@@ -13,7 +13,7 @@
   }
   
   .imgx img {
-    width: 50%;
+    width: 40%;
     height: auto;
     display: block;
     margin: auto;

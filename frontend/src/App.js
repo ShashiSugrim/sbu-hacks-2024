@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import finderShoeLogo from './FinderShoeLogo.png';
+import finderShoeLogo from './FinderShoeLogos.png';
 import NavBar from './components/NavBar';
 import barcode from "./BarCode.png";
 import Button from './components/FindYourFitButton.jsx';

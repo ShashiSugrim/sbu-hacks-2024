@@ -4,10 +4,12 @@ import Shoe from "../components/Shoe";
 const Results = () => {
   return (
     <>
-      <div>Search results</div>
-      <Shoe></Shoe>
-      <Shoe></Shoe>
-      <Shoe></Shoe>
+      <div>
+        <div>Search results</div>
+        <Shoe></Shoe>
+        <Shoe></Shoe>
+        <Shoe></Shoe>
+      </div>
     </>
   );
 };

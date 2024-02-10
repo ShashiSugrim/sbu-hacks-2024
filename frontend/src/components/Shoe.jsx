@@ -1,11 +1,5 @@
 import React from "react";
 
-interface Props {
-  imageSrc: string;
-  title: string;
-  price: string;
-}
-
 const Shoe = ({ source, title, price }) => {
   return (
     <>

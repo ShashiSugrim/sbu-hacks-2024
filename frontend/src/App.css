@@ -16,7 +16,4 @@
   /* Removed margin-right if not necessary */
 }
 
-.Results {
-  flex-grow: 1; /* Results will take up the remaining space */
-  width: 75%; /* Optionally enforce the width */
-}
+

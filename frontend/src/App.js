@@ -8,9 +8,10 @@ function App() {
   return (
     <div className="App">
       <SearchBar />
+      <div>Search results</div>
       <div className="content">
         <Filter className="Filter" />
-        <Results className="Results" />
+        <Results  />
       </div>
     </div>
   );

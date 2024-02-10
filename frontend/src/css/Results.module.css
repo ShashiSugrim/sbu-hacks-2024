@@ -1,0 +1,15 @@
+.title {
+    /* Style for the title if needed, e.g., font size, margin, etc. */
+    font-size: 24px;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .Results {
+    flex-grow: 1; /* Results will take up the remaining space */
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Wrap items to the next line if there's no more space */
+    gap: 10px; /* Optional: Adds space between items */
+    /* Other styles as needed */
+  }
+  

@@ -1,0 +1,21 @@
+/* ShoeFinderImage.module.css */
+.imgx {
+    width: 100%;
+    text-align: center;
+    margin-right: 10px;
+    padding: 220px 5px;
+    padding-bottom: 350px;
+  
+
+    border-radius: 80px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .imgx img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  

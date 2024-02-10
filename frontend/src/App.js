@@ -4,17 +4,22 @@ import './App.css';
 import finderShoeLogo from './FinderShoeLogo.png';
 import NavBar from './components/NavBar';
 import barcode from "./BarCode.png";
+import Button from './components/FindYourFitButton.jsx';
+import ShoeFinderImage from './components/ShoeFinderImage.jsx';
+import BarCodeImage from "./components/BarCodeImage.jsx";
+
 function App() {
   return (
     <div className="App">
-      <button className="button"><b></b></button>
+      {/* <button className="button"><b></b></button> */}
       <NavBar />
-      <img src={finderShoeLogo} />
-    <hr/>
-      <button>Find Your Fit</button>
-      <hr/>
-      <img src={barcode}/>
+      <ShoeFinderImage src={finderShoeLogo} />
+   
+    <Button>Find your fit </Button>
+      
 
+     {/** <Image src={barcode}/> */} 
+      <BarCodeImage src={barcode} />
     </div>
   );
 }

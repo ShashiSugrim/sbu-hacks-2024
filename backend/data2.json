@@ -1,0 +1,33 @@
+[
+   {
+     "title": "Air Max 270",
+     "brand": "Nike",
+     "size": 9,
+     "gender": "male",
+     "price": 150,
+     "width": "medium",
+     "color": "black",
+     "categories": "sneakers"
+   },
+   {
+     "title": "Classic Leather",
+     "brand": "Reebok",
+     "size": 8,
+     "gender": "female",
+     "price": 75,
+     "width": "narrow",
+     "color": "white",
+     "categories": "casual"
+   },
+   {
+     "title": "Yeezy Boost 350",
+     "brand": "Adidas",
+     "size": 10,
+     "gender": "unisex",
+     "price": 220,
+     "width": "medium",
+     "color": "grey",
+     "categories": "sneakers"
+   }
+ ]
+ 

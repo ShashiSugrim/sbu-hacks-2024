@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Air Max 270",
+    "brand": "Nike",
+    "size": 9,
+    "gender": "male",
+    "price": 150,
+    "width": "medium",
+    "color": "black",
+    "categories": "sneakers"
+  },
+  {
+    "title": "Classic Leather",
+    "brand": "Reebok",
+    "size": 8,
+    "gender": "female",
+    "price": 75,
+    "width": "narrow",
+    "color": "white",
+    "categories": "casual"
+  },
+  {
+    "title": "Yeezy Boost 350",
+    "brand": "Adidas",
+    "size": 10,
+    "gender": "unisex",
+    "price": 220,
+    "width": "medium",
+    "color": "grey",
+    "categories": "sneakers"
+  },
+  {
+    "title": "Gel-Kayano 27",
+    "brand": "ASICS",
+    "size": 11,
+    "gender": "male",
+    "price": 160,
+    "width": "wide",
+    "color": "blue",
+    "categories": "running"
+  },
+  {
+    "title": "Chuck Taylor All Star",
+    "brand": "Converse",
+    "size": 7,
+    "gender": "female",
+    "price": 55,
+    "width": "medium",
+    "color": "red",
+    "categories": "casual"
+  },
+  {
+    "title": "Kids Light-Up Sneaker",
+    "brand": "Skechers",
+    "size": 3,
+    "gender": "kids",
+    "price": 45,
+    "width": "medium",
+    "color": "pink",
+    "categories": "sneakers"
+  },
+  {
+    "title": "UltraBoost 21",
+    "brand": "Adidas",
+    "size": 12,
+    "gender": "male",
+    "price": 180,
+    "width": "medium",
+    "color": "black",
+    "categories": "running"
+  },
+  {
+    "title": "Wave Rider 24",
+    "brand": "Mizuno",
+    "size": 8,
+    "gender": "female",
+    "price": 130,
+    "width": "narrow",
+    "color": "purple",
+    "categories": "running"
+  },
+  {
+    "title": "Disruptor II",
+    "brand": "Fila",
+    "size": 9,
+    "gender": "unisex",
+    "price": 65,
+    "width": "wide",
+    "color": "white",
+    "categories": "sneakers"
+  },
+  {
+    "title": "GrandPro Tennis Sneaker",
+    "brand": "Cole Haan",
+    "size": 10,
+    "gender": "male",
+    "price": 130,
+    "width": "narrow",
+    "color": "brown",
+    "categories": "casual"
+  },
+  {
+    "title": "Desert Boot",
+    "brand": "Clarks",
+    "size": 11,
+    "gender": "male",
+    "price": 130,
+    "width": "medium",
+    "color": "beige",
+    "categories": "boots"
+  },
+  {
+    "title": "1460 Originals Eight-Eye Lace-Up Boot",
+    "brand": "Dr. Martens",
+    "size": 9,
+    "gender": "unisex",
+    "price": 150,
+    "width": "medium",
+    "color": "black",
+    "categories": "boots"
+  },
+  {
+    "title": "Arizona Soft Footbed Sandal",
+    "brand": "Birkenstock",
+    "size": 8,
+    "gender": "female",
+    "price": 135,
+    "width": "narrow",
+    "color": "brown",
+    "categories": "sandals"
+  },
+  {
+    "title": "Air Zoom Pegasus 37",
+    "brand": "Nike",
+    "size": 10,
+    "gender": "male",
+    "price": 120,
+    "width": "wide",
+    "color": "green",
+    "categories": "running"
+  },
+  {
+    "title": "Ballet Flats",
+    "brand": "Tory Burch",
+    "size": 7,
+    "gender": "female",
+    "price": 228,
+    "width": "medium",
+    "color": "navy",
+    "categories": "flats"
+  },
+  {
+    "title": "Predator Freak .3 Firm Ground",
+    "brand": "Adidas",
+    "size": 8,
+    "gender": "unisex",
+    "price": 100,
+    "width": "medium",
+    "color": "red",
+    "categories": "soccer cleats"
+  },
+  {
+    "title": "Wave Lightning Z5",
+    "brand": "Mizuno",
+    "size": 9,
+    "gender": "female",
+    "price": 125,
+    "width": "medium",
+    "color": "white",
+    "categories": "volleyball"
+  },
+  {
+    "title": "Pro Model 2G Low",
+    "brand": "Adidas",
+    "size": 12,
+    "gender": "male",
+    "price": 80,
+    "width": "wide",
+    "color": "black",
+    "categories": "basketball"
+  },
+  {
+    "title": "Old Skool Skate Shoe",
+    "brand": "Vans",
+    "size": 10,
+    "gender": "unisex",
+    "price": 60,
+    "width": "medium",
+    "color": "blue",
+    "categories": "skateboarding"
+  },
+  {
+    "title": "GT-2000 9",
+    "brand": "ASICS",
+    "size": 8,
+    "gender": "female",
+    "price": 120,
+    "width": "narrow",
+    "color": "pink",
+    "categories": "running"
+  }
+]

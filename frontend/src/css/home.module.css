@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  padding: 40px;
+}
+
+.content {
+  display: flex;
+  /* Removed justify-content to allow elements to use available space */
+  margin-top: 20px; /* Add space between the search bar and the content area */
+}
+
+.Filter {
+  flex: 0 0 25%; /* Do not grow or shrink, start at 25% of the container's width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* Removed margin-right if not necessary */
+}
+
+.overallStyle {
+  margin-left: 10px;
+}

@@ -1,26 +1,29 @@
-// src/App.js
-import React from 'react';
-import './App.css';
-import finderShoeLogo from './FinderShoeLogos.png';
-import NavBar from './components/NavBar';
-import barcode from "./BarCode.png";
-import Button from './components/FindYourFitButton.jsx';
-import ShoeFinderImage from './components/ShoeFinderImage.jsx';
-import BarCodeImage from "./components/BarCodeImage.jsx";
+import React from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+import Home from "./Home";
 
 function App() {
-  return (
-    <div className="App">
-      {/* <button className="button"><b></b></button> */}
-      <NavBar />
-      <ShoeFinderImage src={finderShoeLogo} />
-      <h1>"Perfect Fit, Style & Happiness For Every Mile"</h1>
-    <Button>Find your fit </Button>
-      
+  const navigate = useNavigate();
 
-     {/** <Image src={barcode}/> */} 
-      <BarCodeImage src={barcode} />
-    </div>
+  function handleLogo(event) {
+    navigate("/");
+  }
+  return (
+    <>
+      <div className="App">
+        {/* <Home /> */}
+        <Routes>
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

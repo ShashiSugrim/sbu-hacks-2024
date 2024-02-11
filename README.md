@@ -31,3 +31,5 @@ cd frontend/
 npm install
 npm start
 ```
+
+### Page should be running at localhost:3000

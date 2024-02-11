@@ -2,91 +2,117 @@ import React, { useState } from "react";
 import FILTERCSS from "../css/Filter.module.css";
 
 const Filter = () => {
-  const [priceRange, setPriceRange] = useState({ min: 0, max: 100 });
-  const [gender, setGender] = useState({ male: false, female: false });
-  const [includePrice, setIncludePrice] = useState({ min: false, max: false });
-  const [size, setsize] = useState(0);
+  const [priceLow, setPriceLow] = useState(0);
+  const [priceHigh, setPriceHigh] = useState(400);
+  const [gender, setGender] = useState(""); // Simplified gender selection
+  const [size, setSize] = useState(0);
 
-  const setSize = (event) => {
-    size = 4;
+  const handleGenderChange = (event) => {
+    setGender(event.target.value);
+  };
+
+  const handleSizeChange = (event) => {
+    setSize(Number(event.target.value));
   };
 
   const handlePriceChange = (event) => {
     const { name, value } = event.target;
-    setPriceRange({ ...priceRange, [name]: Number(value) });
+    if (name === "priceLow") setPriceLow(Number(value));
+    if (name === "priceHigh") setPriceHigh(Number(value));
   };
 
-  const handleGenderChange = (event) => {
-    const { name, checked } = event.target;
-    setGender({ ...gender, [name]: checked });
-  };
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
 
-  const handleIncludePriceChange = (event) => {
-    const { name, checked } = event.target;
-    setIncludePrice({ ...includePrice, [name]: checked });
+    const requestData = {
+      gender,
+      priceLow,
+      priceHigh,
+      size,
+    };
+
+    try {
+      const response = await fetch("http://localhost:8000/filter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestData),
+      });
+
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log("Response from server:", jsonResponse);
+        // Handle success
+      } else {
+        console.error("Failed to fetch");
+        // Handle error
+      }
+    } catch (error) {
+      console.error("Error in fetch: ", error);
+      // Handle error
+    }
   };
 
   return (
     <div className={FILTERCSS.filterContainer}>
-      <button>
+      <form onSubmit={handleSubmit}>
         <h3>Filter</h3>
-      </button>
 
-      <div>
-        <h4>Prices:</h4>
-        {/* Category Checkboxes */}
-        {/* Existing category checkboxes */}
-        <label>
-          <input
-            type="input"
-            name="male"
-            checked={gender["male"]}
-            onChange={handleGenderChange}
-          />
-          Lowest Price
-        </label>
-        <br />
-        <label>
-          <input
-            type="input"
-            name="female"
-            checked={gender["female"]}
-            onChange={handleGenderChange}
-          />
-          Highest Price
-        </label>
-        <h4>Size </h4>
+        <div>
+          <h4>Gender</h4>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              checked={gender === "male"}
+              onChange={handleGenderChange}
+            />
+            Male
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              checked={gender === "female"}
+              onChange={handleGenderChange}
+            />
+            Female
+          </label>
+        </div>
 
-        <label>
+        <div>
+          <h4>Size</h4>
           <input
-            type="input"
-            name="female"
-            checked={gender["female"]}
-            onChange={handleGenderChange}
+            type="number"
+            value={size}
+            onChange={handleSizeChange}
+            placeholder="Enter Size"
           />
-          Enter Size
-        </label>
+        </div>
 
-        <h4>Gender</h4>
-        <label>
+        <div>
+          <h4>Price Range</h4>
           <input
-            type="checkbox"
-            name="male"
-            checked={gender["male"]}
-            onChange={handleGenderChange}
+            type="number"
+            name="priceLow"
+            value={priceLow}
+            onChange={handlePriceChange}
+            placeholder="Lowest Price"
           />
-          Male
-        </label>
-        <label>
           <input
-            type="checkbox"
-            name="female"
-            checked={gender["female"]}
-            onChange={handleGenderChange}
+            type="number"
+            name="priceHigh"
+            value={priceHigh}
+            onChange={handlePriceChange}
+            placeholder="Highest Price"
           />
-          Female
-        </label>
-      </div>
+        </div>
+
+        <button type="submit">Apply Filters</button>
+      </form>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const SearchBar = () => {
       <header className={SearchBarCSS.header}>
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Perfect Fit, Style & Happiness For Every Mile..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className={SearchBarCSS.searchInput}

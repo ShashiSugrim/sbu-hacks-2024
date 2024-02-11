@@ -2,6 +2,10 @@
 
 ## Website that aims to help people find the right shoe for themselves.
 
+## Demo
+
+![](public/demo.gif)
+
 ## Page One
 
 ![](/public/pageone.png)

@@ -10,7 +10,14 @@ const Results = ({ items }) => {
         {/* {items.map((item, index) => (
           <Shoe key={index} {...item} /> // Spread item props into Shoe component
         ))} */}
-        <Shoe></Shoe>
+        <Shoe
+          title={"Jordans"}
+          price={50}
+          gender={"male"}
+          source={
+            "https://sneakernews.com/wp-content/uploads/2020/07/air-jordan-1-mid-metallic-gold-DC1419-700-0-1.jpg"
+          }
+        ></Shoe>
         <Shoe></Shoe>
         <Shoe></Shoe>
       </div>

@@ -28,7 +28,9 @@ const Filter = () => {
 
   return (
     <div className={FILTERCSS.filterContainer}>
-      <h3>Filter</h3>
+      <button>
+        <h3>Filter</h3>
+      </button>
 
       <div>
         <h4>Prices:</h4>

@@ -10,11 +10,13 @@ import BarCodeImage from "./components/BarCodeImage.jsx";
 
 function PageTwo() {
   return (
-    <div className="App">
+    <div className={maincss.mainBody}>
       {/* <button className="button"><b></b></button> */}
       <NavBar />
       <ShoeFinderImage src={finderShoeLogo} />
-      <h1>"Perfect Fit, Style & HPageTwoiness For Every Mile"</h1>
+      <h1 style={{ textAlign: "center" }}>
+        "Perfect Fit, Style & Happiness For Every Mile"
+      </h1>
       <Button>Find your fit </Button>
 
       {/** <Image src={barcode}/> */}

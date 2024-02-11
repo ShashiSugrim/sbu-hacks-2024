@@ -1,87 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Shoe from "../components/Shoe";
-import styles from "../css/Results.module.css"; // Assuming the export is default
+import styles from "../css/Results.module.css";
 
-const Results = ({ items }) => {
+const Results = () => {
+  const [shoes, setShoes] = useState([]); // Initialize state to hold shoes data
+
+  useEffect(() => {
+    const handleStorageUpdate = () => {
+      // Retrieve and use the updated data from localStorage
+      const updatedData = JSON.parse(localStorage.getItem("filterResults"));
+      console.log("RESULT GOT DATA: ", JSON.stringify(updatedData));
+      setShoes(updatedData || []); // Update state with new data or empty array if null
+    };
+
+    // Initial load in case the data is already in localStorage when component mounts
+    handleStorageUpdate();
+
+    window.addEventListener("storageUpdate", handleStorageUpdate);
+
+    // Cleanup the event listener on component unmount
+    return () =>
+      window.removeEventListener("storageUpdate", handleStorageUpdate);
+  }, []);
+
   return (
-    <>
-      {/* Assuming you have or will add a .title style */}
-      <div className={styles.Results}>
-        {/* {items.map((item, index) => (
-          <Shoe key={index} {...item} /> // Spread item props into Shoe component
-        ))} */}
+    <div className={styles.Results}>
+      {shoes.map((shoe) => (
         <Shoe
-          title={"Jordans"}
-          price={50}
-          gender={"Male"}
-          source={"https://imgnike-a.akamaihd.net/1300x1300/0253927T.jpg"}
-        ></Shoe>
-        <Shoe
-          title={"Adidas"}
-          price={70}
-          gender={"Female"}
-          source={
-            "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a1c1af88f044d2288d2a5a90114db97_9366/samba-classic.jpg"
-          }
-        ></Shoe>
-        <Shoe
-          title={"Nike"}
-          price={80}
-          gender={"Male"}
-          source={
-            "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/hbaotfderndelmnbcm9t/revolution-5-mens-road-running-shoes-ZXqS6C.png"
-          }
-        ></Shoe>
-        <Shoe
-          title={"New Balance"}
-          price={65}
-          gender={"Male"}
-          source={
-            "https://static.qns.digital/img/p/2/5/0/3/5/4/0/2503540-full_product.jpg"
-          }
+          key={shoe.id}
+          title={shoe.title}
+          price={shoe.price}
+          gender={shoe.gender}
+          source={shoe.img_url} // Assuming `source` prop in Shoe component is for image URL
         />
-        <Shoe
-          title={"Clarck Wallabees"}
-          price={70}
-          gender={"Female"}
-          source={
-            "https://packershoes.com/cdn/shop/products/Tan-1_300x.jpg?v=1676041432"
-          }
-        ></Shoe>
-        <Shoe
-          title={"Dr.Martin"}
-          price={50}
-          gender={"Female"}
-          source={
-            "https://static.ftshp.digital/img/p/1/0/5/6/7/0/9/1056709.jpg"
-          }
-        ></Shoe>
-        <Shoe
-          title={"Birkenstock"}
-          price={90}
-          gender={"Male"}
-          source={
-            "https://media.finishline.com/i/finishline/560771_250_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)"
-          }
-        ></Shoe>
-        <Shoe
-          title={"Salmon"}
-          price={60}
-          gender={"Unisex"}
-          source={
-            "https://image.goxip.com/D0QtTB5NvUlEweDZK2DgVD4oMNo=/fit-in/500x500/filters:format(jpg):quality(80):fill(white)/https:%2F%2Fimages.stockx.com%2Fimages%2FSalomon-XT-6-Adv-Dover-Street-Market-Silver-Product.jpg"
-          }
-        ></Shoe>
-        <Shoe
-          title={"On Cloud"}
-          price={85}
-          gender={"Unisex"}
-          source={
-            "https://www.prodirectsoccer.com/ProductImages/Gallery_1/231322_Gallery_1_0887111.jpg"
-          }
-        ></Shoe>
-      </div>
-    </>
+      ))}
+    </div>
   );
 };
 

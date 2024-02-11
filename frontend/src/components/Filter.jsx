@@ -43,7 +43,13 @@ const Filter = () => {
       if (response.ok) {
         const jsonResponse = await response.json();
         console.log("Response from server:", jsonResponse);
-        // Handle success
+        // Store the response data in localStorage
+        localStorage.setItem("filterResults", JSON.stringify(jsonResponse));
+
+        // Optionally, if you need to notify other components about the update,
+        // you can dispatch a custom event or use a state management solution
+        // Here's how you might dispatch a custom event
+        window.dispatchEvent(new Event("storageUpdate"));
       } else {
         console.error("Failed to fetch");
         // Handle error

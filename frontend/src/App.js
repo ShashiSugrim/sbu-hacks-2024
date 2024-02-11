@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import './App.css';
+import maincss from './css/main.module.css'
 import finderShoeLogo from './FinderShoeLogos.png';
 import NavBar from './components/NavBar';
 import barcode from "./BarCode.png";

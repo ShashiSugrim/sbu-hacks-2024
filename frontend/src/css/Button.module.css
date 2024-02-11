@@ -1,11 +1,12 @@
 .button {
   padding: 15px 55px;
-  background-color: #a4a2a2;
+  background-color: #807e7e;
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 19px;
   transition: background-color 0.3s ease;
+  
 
   /* Center the button */
   position: absolute;
@@ -18,3 +19,4 @@
 .button:hover {
   background-color: #555;
 }
+

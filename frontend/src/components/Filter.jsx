@@ -31,7 +31,7 @@ const Filter = () => {
       <h3>Filter</h3>
 
       <div>
-        <h4>Prices</h4>
+        <h4>Prices:</h4>
         {/* Category Checkboxes */}
         {/* Existing category checkboxes */}
         <label>

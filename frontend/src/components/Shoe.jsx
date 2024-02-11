@@ -10,7 +10,7 @@ const Shoe = ({ source, title, price, gender }) => {
           <p>Price: {price}</p>
           <p>Gender: {gender}</p>
           <a href="#" class="btn btn-primary">
-            Add to Cart
+            <b>Add to Cart</b>
           </a>
         </div>
       </div>

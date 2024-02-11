@@ -41,11 +41,11 @@ const Results = ({ items }) => {
           }
         />
         <Shoe
-          title={"Bata"}
+          title={"Clarck Wallabees"}
           price={70}
           gender={"Female"}
           source={
-            "https://content.jdmagicbox.com/quickquotes/images_main/bata-blue-casual-shoes-for-women-3-164451738-xbd9v.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"
+            "https://packershoes.com/cdn/shop/products/Tan-1_300x.jpg?v=1676041432"
           }
         ></Shoe>
         <Shoe
@@ -53,7 +53,7 @@ const Results = ({ items }) => {
           price={50}
           gender={"Female"}
           source={
-            "https://www.kickscrew.com/cdn/shop/products/main-square_edebe1c6-afcb-423f-b764-9bf6b9d2bf68_877x.jpg?v=1690732992"
+            "https://static.ftshp.digital/img/p/1/0/5/6/7/0/9/1056709.jpg"
           }
         ></Shoe>
         <Shoe

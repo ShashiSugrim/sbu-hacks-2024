@@ -31,7 +31,8 @@ const Results = () => {
           title={shoe.title}
           price={shoe.price}
           gender={shoe.gender}
-          source={shoe.img_url} // Assuming `source` prop in Shoe component is for image URL
+          source={shoe.img_url}
+          size={shoe.size} // Assuming `source` prop in Shoe component is for image URL
         />
       ))}
     </div>

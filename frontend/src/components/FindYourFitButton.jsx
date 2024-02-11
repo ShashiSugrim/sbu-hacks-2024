@@ -1,12 +1,20 @@
-import React from 'react'
-import buttonCSS from "../css/Button.module.css"
+// In your FindYourFitButton.jsx file
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import BUTTONCSS from "../css/Button.module.css";
 
-const button = () => {
+const FindYourFitButton = ({ children }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/pagetwo"); // Use the path you've defined for PageTwo in your Router setup
+  };
+
   return (
-    <>
-        <button className={buttonCSS.button}><b>Find Your Fit</b></button>
-    </>
-  )
-}
+    <button className={BUTTONCSS.button} onClick={handleClick}>
+      {children}
+    </button>
+  );
+};
 
-export default button
+export default FindYourFitButton;

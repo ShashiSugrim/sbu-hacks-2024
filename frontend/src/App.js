@@ -1,19 +1,30 @@
 import React from "react";
-import pagetwocss from "./css/PageTwo.module.css";
-import SearchBar  from "./components/SearchBar";
-import Filter from "./components/Filter";
-import Results from "./components/Results";
+import PageTwo from "./PageTwo";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useNavigate,
+} from "react-router-dom";
+import Home from "./Home";
 
 function App() {
+  const navigate = useNavigate();
+
+  function handleLogo(event) {
+    navigate("/");
+  }
   return (
-    <div className="App">
-      <SearchBar />
-      <div>Search results</div>
-      <div className="content">
-        <Filter className="Filter" />
-        <Results  />
+    <>
+      <div className="App">
+        {/* <Home /> */}
+        <Routes>
+          {/* <Route path="*" element={<Home />} /> */}
+          <Route path="*" element={<PageTwo />} />
+        </Routes>
       </div>
-    </div>
+    </>
   );
 }
 

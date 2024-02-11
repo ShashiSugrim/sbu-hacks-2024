@@ -16,3 +16,4 @@ class Shoes(BaseModel):
     width:str
     color:str
     categories:str
+    img_url:str

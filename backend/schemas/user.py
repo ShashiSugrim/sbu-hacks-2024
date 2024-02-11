@@ -8,6 +8,7 @@ def shoeEntity (item) -> dict:
         "price":item["price"], 
         "width":item["width"], 
         "color":item["color"], 
+        "img_url":item["img_url"], 
         "categories":item["categories"], 
     }
 

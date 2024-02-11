@@ -1,4 +1,6 @@
-from fastapi import APIRouter
+from fastapi import APIRouter , HTTPException, Body
+from pydantic import BaseModel
+from typing import List
 
 from backend.models.shoes import Shoes
 from backend.config.db import conn 
@@ -32,3 +34,21 @@ async def update_shoe(id,user: Shoes):
 @user.delete('/{id}')
 async def delete_shoe(id,user: Shoes):
     return shoeEntity(conn.local.user.find_one_and_delete({"_id":ObjectId(id)}))
+
+class FilterCriteria(BaseModel):
+    gender: str
+    priceLow: int
+    priceHigh: int
+    size: int
+
+@user.post('/filter')
+async def filter_shoes(criteria: FilterCriteria):
+    query = {
+        "gender": criteria.gender,
+        "price": {"$gte": criteria.priceLow, "$lte": criteria.priceHigh},
+        "size": criteria.size
+    }
+    shoes = shoesEntity(conn.local.user.find(query))
+    if not shoes:
+        raise HTTPException(status_code=404, detail="No shoes found matching the criteria")
+    return shoes

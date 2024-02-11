@@ -7,7 +7,8 @@
     "price": 150,
     "width": "medium",
     "color": "black",
-    "categories": "sneakers"
+    "categories": "sneakers",
+    "img_url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/skwgyqrbfzhu6uyeh0gg/air-max-270-mens-shoes-KkLcGR.png"
   },
   {
     "title": "Classic Leather",
@@ -17,6 +18,7 @@
     "price": 75,
     "width": "narrow",
     "color": "white",
+    "img_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTdvpG2DQ7-kj5Lsz8YuxeEwrpIOhRPewWJf2z9zfkZOM257ec_DS5K0Uu1bIKwphCsxNxO73fcXU2GFaTYw2wau_INVlI5Hcj_S6y3dig",
     "categories": "casual"
   },
   {
@@ -27,6 +29,7 @@
     "price": 220,
     "width": "medium",
     "color": "grey",
+    "img_url": "https://cdn.flightclub.com/TEMPLATE/802389/1.jpg",
     "categories": "sneakers"
   },
   {
@@ -37,6 +40,7 @@
     "price": 160,
     "width": "wide",
     "color": "blue",
+    "img_url": "https://images.asics.com/is/image/asics/1011A767_402_SR_RT_GLB?$sfcc-product$",
     "categories": "running"
   },
   {
@@ -47,6 +51,7 @@
     "price": 55,
     "width": "medium",
     "color": "red",
+    "img_url": "https://images.journeys.com/images/products/1_5160_FS_ALT1.JPG",
     "categories": "casual"
   },
   {
@@ -57,6 +62,7 @@
     "price": 45,
     "width": "medium",
     "color": "pink",
+    "img_url": "https://scene7.samsclub.com/is/image/samsclub/0019520477210_A",
     "categories": "sneakers"
   },
   {
@@ -67,6 +73,7 @@
     "price": 180,
     "width": "medium",
     "color": "black",
+    "img_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRK3y2rVUag5wHmt3ocExpbkr4FoT9JdYSdg4H8qEqAzQY3hM8glJ-qOeQmAZm7uZzloEhKt3l-xIqLkw3sHWD2z83qe6fuNdLegyt677LhhFnBmTex7mMO4Q",
     "categories": "running"
   },
   {
@@ -77,6 +84,7 @@
     "price": 130,
     "width": "narrow",
     "color": "purple",
+    "img_url": "https://shoplineimg.com/59d79b9b492678e9e8006294/5fe3c01017b019003e35936f/800x.jpg?",
     "categories": "running"
   },
   {
@@ -87,6 +95,7 @@
     "price": 65,
     "width": "wide",
     "color": "white",
+    "img_url":"https://www.fila.com/dw/image/v2/AAEJ_PRD/on/demandware.static/-/Sites-FilaUSACatalogID/default/dw8fd687d1/images/ProductImages/5FM00002_125_01_e.jpg?sw=1334&sh=2000&sm=fit",
     "categories": "sneakers"
   },
   {
@@ -97,6 +106,7 @@
     "price": 130,
     "width": "narrow",
     "color": "brown",
+    "img_url": "https://www.colehaan.com/on/demandware.static/-/Sites-itemmaster_colehaan/default/dw7d985427/images/C22585/large/GRANDPRO%20TENNIS_e_A_C22585.jpg",
     "categories": "casual"
   },
   {
@@ -107,6 +117,7 @@
     "price": 130,
     "width": "medium",
     "color": "beige",
+    "img_url": "https://cdn.media.amplience.net/i/clarks/26155525_GW_1",
     "categories": "boots"
   },
   {
@@ -117,6 +128,7 @@
     "price": 150,
     "width": "medium",
     "color": "black",
+    "img_url": "https://i5.walmartimages.com/seo/Dr-Martens-Women-s-1460w-Originals-Eight-Eye-Lace-up-Boot-1460-W-9-Black-Nappa_1616418e-e957-4971-9adb-a98c641997c6.26fb32dc74d5c70088e858df59d1488e.jpeg",
     "categories": "boots"
   },
   {
@@ -127,6 +139,7 @@
     "price": 135,
     "width": "narrow",
     "color": "brown",
+    "img_url": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSrJxcSkEJ9dNCJ3fEwoaUbna2OLn59HqfVcS35NXPPzoUImH9vK24G9MUzOj2i1erV_U8PzzaKoyHPnuyMiv0j5SLCdPhd2RVPYApU5obRDxc6v8z3CHbee60",
     "categories": "sandals"
   },
   {
@@ -137,6 +150,7 @@
     "price": 120,
     "width": "wide",
     "color": "green",
+    "img_url": "https://www.kicksonfire.com/wp-content/uploads/2020/08/nike-air-zoom-pegasus-37-poison-green-5.jpg",
     "categories": "running"
   },
   {
@@ -147,6 +161,7 @@
     "price": 228,
     "width": "medium",
     "color": "navy",
+    "img_url": "https://m.media-amazon.com/images/I/71C9ORqcxeL._AC_SL1500_.jpg",
     "categories": "flats"
   },
   {
@@ -157,6 +172,7 @@
     "price": 100,
     "width": "medium",
     "color": "red",
+    "img_url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c4ef2c4d84274c8a9c18ad2101385ce3_9366/Predator_Freak.3_Firm_Ground_Soccer_Cleats_Red_FY6279_01_standard.jpg",
     "categories": "soccer cleats"
   },
   {
@@ -167,6 +183,7 @@
     "price": 125,
     "width": "medium",
     "color": "white",
+    "img_url": "https://i.ebayimg.com/images/g/VAUAAOSwyLZiqHwa/s-l1200.webp",
     "categories": "volleyball"
   },
   {
@@ -177,6 +194,7 @@
     "price": 80,
     "width": "wide",
     "color": "black",
+    "img_url": "https://i.ebayimg.com/images/g/GY4AAOSwy~plpUmY/s-l1600.webp",
     "categories": "basketball"
   },
   {
@@ -187,6 +205,7 @@
     "price": 60,
     "width": "medium",
     "color": "blue",
+    "img_url": "https://www.shoepalace.com/cdn/shop/products/015a2344d3592c0b86e30d561e4aefb1_2048x2048.jpg?v=1650912404&title=vans-jmi4w6-old-skool-mens-skate-shoes-navy-blue",
     "categories": "skateboarding"
   },
   {
@@ -197,6 +216,7 @@
     "price": 120,
     "width": "narrow",
     "color": "pink",
+    "img_url": "https://i.ebayimg.com/thumbs/images/g/hwEAAOSwjXpjODwb/s-l960.jpg",
     "categories": "running"
   }
 ]

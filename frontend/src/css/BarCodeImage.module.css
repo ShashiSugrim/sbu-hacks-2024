@@ -1,0 +1,8 @@
+/* BarCodeSize.module.css */
+.BarCodeImage {
+    width: 50%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width if necessary */
+    margin: auto;
+    display: block;
+  }
+  

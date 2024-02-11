@@ -45,21 +45,25 @@ const Filter = () => {
         console.log("Response from server:", jsonResponse);
         // Store the response data in localStorage
         localStorage.setItem("filterResults", JSON.stringify(jsonResponse));
-
-        // Optionally, if you need to notify other components about the update,
-        // you can dispatch a custom event or use a state management solution
-        // Here's how you might dispatch a custom event
+        // Dispatch a custom event to notify other components
         window.dispatchEvent(new Event("storageUpdate"));
       } else {
-        console.error("Failed to fetch");
-        // Handle error
+        // Handle non-2xx responses
+        console.error("Failed to fetch with status: ", response.status);
+        // You might want to clear the local storage or set it to a default state
+        localStorage.setItem("filterResults", JSON.stringify([]));
+        // Notify components that an attempt was made but failed
+        window.dispatchEvent(new Event("storageUpdate"));
       }
     } catch (error) {
       console.error("Error in fetch: ", error);
-      // Handle error
+      // Handle fetch error
+      // Consider setting local storage to a default state here as well
+      localStorage.setItem("filterResults", JSON.stringify([]));
+      // Notify components that an attempt was made but failed
+      window.dispatchEvent(new Event("storageUpdate"));
     }
   };
-
   return (
     <div className={FILTERCSS.filterContainer}>
       <form onSubmit={handleSubmit}>
